@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" width="100%" height="100%">
+    <defs>
+        <!-- Outer Glow for Text -->
+        <filter id="neonGlowText" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="8" result="blur1" />
+            <feGaussianBlur stdDeviation="15" result="blur2" />
+            <feMerge>
+                <feMergeNode in="blur2" />
+                <feMergeNode in="blur1" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+        
+        <!-- Outer Glow for Symbol -->
+        <filter id="neonGlowSymbol" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="6" result="blur1" />
+            <feGaussianBlur stdDeviation="12" result="blur2" />
+            <feMerge>
+                <feMergeNode in="blur2" />
+                <feMergeNode in="blur1" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+        
+        <linearGradient id="cyberGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ffffff" />
+            <stop offset="100%" stop-color="#e0f7fa" />
+        </linearGradient>
+    </defs>
+
+    <!-- Symbol Group -->
+    <g transform="translate(100, 100)">
+        <!-- The "C" Symbol -->
+        <path d="M 40 -60 A 60 60 0 1 0 40 60 L 20 40 A 40 40 0 1 1 20 -40 Z" fill="#45f3ff" filter="url(#neonGlowSymbol)" />
+        <path d="M 40 -60 A 60 60 0 1 0 40 60 L 20 40 A 40 40 0 1 1 20 -40 Z" fill="#ffffff" />
+        
+        <!-- Diagonal Cyber Accents inside C -->
+        <line x1="-15" y1="-15" x2="15" y2="15" stroke="#45f3ff" stroke-width="4" filter="url(#neonGlowSymbol)"/>
+        <line x1="-15" y1="-15" x2="15" y2="15" stroke="#ffffff" stroke-width="2" />
+        <line x1="-25" y1="-5" x2="5" y2="25" stroke="#45f3ff" stroke-width="4" filter="url(#neonGlowSymbol)"/>
+        <line x1="-25" y1="-5" x2="5" y2="25" stroke="#ffffff" stroke-width="2" />
+    </g>
+
+    <!-- Text Group -->
+    <!-- We stretch text to fit a wide lockup -->
+    <text x="220" y="125" font-family="'Montserrat', sans-serif" font-weight="600" font-size="80" fill="#45f3ff" letter-spacing="25" filter="url(#neonGlowText)">COLORVERSE</text>
+    <text x="220" y="125" font-family="'Montserrat', sans-serif" font-weight="600" font-size="80" fill="url(#cyberGradient)" letter-spacing="25">COLORVERSE</text>
+    
+    <!-- Sub-line abstract UI dots -->
+    <circle cx="230" cy="155" r="3" fill="#45f3ff" filter="url(#neonGlowSymbol)"/>
+    <circle cx="250" cy="155" r="3" fill="#45f3ff" filter="url(#neonGlowSymbol)"/>
+    <circle cx="270" cy="155" r="3" fill="#45f3ff" filter="url(#neonGlowSymbol)"/>
+    <line x1="290" y1="155" x2="400" y2="155" stroke="#45f3ff" stroke-width="1" filter="url(#neonGlowSymbol)" stroke-dasharray="5,5"/>
+</svg>

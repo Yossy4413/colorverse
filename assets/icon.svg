@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+    <defs>
+        <filter id="neonGlowSymbol" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="8" result="blur1" />
+            <feGaussianBlur stdDeviation="16" result="blur2" />
+            <feMerge>
+                <feMergeNode in="blur2" />
+                <feMergeNode in="blur1" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+    
+    <!-- Background circle for dark icon contrast if needed, keep transparent mostly -->
+    <rect width="200" height="200" fill="#0b0c10" rx="40" ry="40" />
+
+    <!-- Symbol Group -->
+    <g transform="translate(100, 100)">
+        <path d="M 50 -70 A 70 70 0 1 0 50 70 L 30 50 A 50 50 0 1 1 30 -50 Z" fill="#45f3ff" filter="url(#neonGlowSymbol)" />
+        <path d="M 50 -70 A 70 70 0 1 0 50 70 L 30 50 A 50 50 0 1 1 30 -50 Z" fill="#ffffff" />
+        
+        <line x1="-20" y1="-20" x2="20" y2="20" stroke="#45f3ff" stroke-width="6" filter="url(#neonGlowSymbol)"/>
+        <line x1="-20" y1="-20" x2="20" y2="20" stroke="#ffffff" stroke-width="3" />
+        <line x1="-35" y1="-5" x2="5" y2="35" stroke="#45f3ff" stroke-width="6" filter="url(#neonGlowSymbol)"/>
+        <line x1="-35" y1="-5" x2="5" y2="35" stroke="#ffffff" stroke-width="3" />
+    </g>
+</svg>

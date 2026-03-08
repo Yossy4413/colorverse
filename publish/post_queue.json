@@ -1,0 +1,75 @@
+[
+    {
+        "platform": "twitter",
+        "image_path": "publish/twitter/post1_artwork.png",
+        "caption": "A silent observer in the neon rain.\nネオンの雨の中、静かな観察者。\n\n#COLORVERSE #AIart #cyberpunk",
+        "post_time": "2020-01-01T21:00:00+09:00",
+        "status": "posted",
+        "retry_count": 0,
+        "post_id": "62ef0a41-6bab-4087-8aa0-b6d0b1597615"
+    },
+    {
+        "platform": "instagram",
+        "image_path": "publish/instagram/post1_artwork.png",
+        "caption": "A silent observer in the neon rain.\nネオンの雨の中、静かな観察者。\n\n#COLORVERSE #AIart #cyberpunk",
+        "post_time": "2026-03-10T21:00:00+09:00",
+        "status": "pending",
+        "retry_count": 0
+    },
+    {
+        "platform": "pixiv",
+        "image_path": "publish/pixiv/post1_artwork.png",
+        "caption": "A silent observer in the neon rain.\nネオンの雨の中、静かな観察者。\n\n#COLORVERSE #AIart #cyberpunk",
+        "post_time": "2026-03-10T21:00:00+09:00",
+        "status": "pending",
+        "retry_count": 0
+    },
+    {
+        "platform": "twitter",
+        "image_path": "publish/twitter/post2_character.png",
+        "caption": "KURO\nThe girl who watches the city.\n街を見つめる少女。\n\n#COLORVERSE #AIart #cyberpunk",
+        "post_time": "2026-03-12T21:00:00+09:00",
+        "status": "pending",
+        "retry_count": 0
+    },
+    {
+        "platform": "instagram",
+        "image_path": "publish/instagram/post2_character.png",
+        "caption": "KURO\nThe girl who watches the city.\n街を見つめる少女。\n\n#COLORVERSE #AIart #cyberpunk",
+        "post_time": "2026-03-12T21:00:00+09:00",
+        "status": "pending",
+        "retry_count": 0
+    },
+    {
+        "platform": "pixiv",
+        "image_path": "publish/pixiv/post2_character.png",
+        "caption": "KURO\nThe girl who watches the city.\n街を見つめる少女。\n\n#COLORVERSE #AIart #cyberpunk",
+        "post_time": "2026-03-12T21:00:00+09:00",
+        "status": "pending",
+        "retry_count": 0
+    },
+    {
+        "platform": "twitter",
+        "image_path": "publish/twitter/post3_world.png",
+        "caption": "COLORVERSE CITY\nNeon lights and digital dreams.\nネオンの光とデジタルの夢。\n\n#COLORVERSE #AIart #cyberpunk",
+        "post_time": "2026-03-15T21:00:00+09:00",
+        "status": "pending",
+        "retry_count": 0
+    },
+    {
+        "platform": "instagram",
+        "image_path": "publish/instagram/post3_world.png",
+        "caption": "COLORVERSE CITY\nNeon lights and digital dreams.\nネオンの光とデジタルの夢。\n\n#COLORVERSE #AIart #cyberpunk",
+        "post_time": "2026-03-15T21:00:00+09:00",
+        "status": "pending",
+        "retry_count": 0
+    },
+    {
+        "platform": "pixiv",
+        "image_path": "publish/pixiv/post3_world.png",
+        "caption": "COLORVERSE CITY\nNeon lights and digital dreams.\nネオンの光とデジタルの夢。\n\n#COLORVERSE #AIart #cyberpunk",
+        "post_time": "2026-03-15T21:00:00+09:00",
+        "status": "pending",
+        "retry_count": 0
+    }
+]

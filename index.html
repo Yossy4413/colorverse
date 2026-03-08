@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLORVERSE - Portal</title>
+    <meta property="og:title" content="COLORVERSE">
+    <meta property="og:description" content="COLORVERSE official website. Choose your language.">
+    <meta property="og:image" content="https://colorverse.art/assets/environment/colorverse_city_kv.png">
+    <meta property="og:url" content="https://colorverse.art/">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64x64.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .portal-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, #0b0c10, transparent), url('assets/environment/colorverse_city_kv.png') center/cover no-repeat;
+            opacity: 0.5;
+            z-index: -1;
+            filter: grayscale(80%) contrast(1.2) brightness(0.6);
+        }
+
+        .portal-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .portal-logo-svg {
+            width: 600px;
+            max-width: 90vw;
+            height: auto;
+            margin-bottom: 3rem;
+            filter: drop-shadow(0 0 10px rgba(69, 243, 255, 0.4));
+        }
+
+        .lang-options {
+            display: flex;
+            gap: 40px;
+        }
+
+        .lang-btn {
+            padding: 15px 40px;
+            border: 1px solid var(--text-secondary);
+            color: var(--text-primary);
+            text-decoration: none;
+            font-family: var(--font-heading);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            background: rgba(11, 12, 16, 0.6);
+            backdrop-filter: blur(5px);
+        }
+
+        .lang-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            box-shadow: inset 0 0 10px rgba(69, 243, 255, 0.5), 0 0 10px rgba(69, 243, 255, 0.5);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 600px) {
+            .portal-logo {
+                font-size: 2.5rem;
+                letter-spacing: 10px;
+            }
+
+            .lang-options {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="portal-bg"></div>
+    <div class="portal-container">
+        <img src="assets/logo.svg" alt="COLORVERSE" class="portal-logo-svg">
+        <div class="lang-options">
+            <a href="en/index.html" class="lang-btn">English</a>
+            <a href="ja/index.html" class="lang-btn">日本語</a>
+        </div>
+    </div>
+</body>
+
+</html>
